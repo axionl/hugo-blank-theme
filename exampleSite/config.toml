@@ -1,13 +1,13 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'Blank'
-theme = 'blank'
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Blank"
+theme = "blank"
 
 [Params]
-    name = 'Blank|...'
-    description = 'A simple home page site.'
-    favicon = '/images/favicon.ico'
-    avatar = '/images/avaatr.jpg'
+    name = "Blank|..."
+    description = "A simple home page site."
+    favicon = "/images/favicon.ico"
+    avatar = "/images/avaatr.jpg"
 
 [[params.links]]
 name = "Site A"
