@@ -12,7 +12,7 @@ A simple home page site.
     ```shell
     $ cd <hugo site path>
     $ mkdir -p themes
-    $ git clone https://github.com/axionl/hugo-blank-theme.git themes/
+    $ git clone https://github.com/axionl/hugo-blank-theme.git themes/blank
     $ cp themes/blank/exampleSite/config.toml .
     ```
 
