@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="{{ .Site.Params.Favicon }}">
+</head>
+<body>
+    <div class="avatar">
+        <a href="{{ .Site.BaseURL }}">
+            <img src="{{ .Site.Params.Avatar }}" alt="Avatar">
+        </a>
+    </div>
+    {{ with .Site.Params.Name }}
+    <h1>{{ . }}</h1>
+    {{ end }}
+    {{ with .Site.Params.Description }}
+    <h2>{{ . }}</h2>
+    {{ end }}
+    <div class="menu">
+    {{ with .Site.Params.Links }}
+        {{ range $link := . }}
+            <a href="{{ $link.url }}" target="_blank">
+                {{ with $link.icon }}
+                <img class="site-icon" src="{{ . }}" alt="Icon"/>
+                {{ end }}
+                {{ with $link.name }}
+                <span>{{ . }}</span>
+                {{ end }}
+            </a>
+        {{ end }}
+    {{ end }}
+    </div>
+</body>
+</html>

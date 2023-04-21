@@ -1,0 +1,99 @@
+body {
+    background-image: url("/images/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #2e2e2e;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 72px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    color: whitesmoke;
+    text-align: center;
+    margin: 16px auto;
+    max-width: 80%;
+    background: #2e2e2e8f;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+h2:hover {
+    background: #2e2e2eaf;
+}
+
+.avatar {
+    margin-top: 24vh;
+    text-align: center;
+}
+
+.avatar img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50%;
+}
+
+.menu {
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 64px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu a {
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: white;
+    padding: 12px;
+    margin: 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    border-color: whitesmoke;
+    border-width: 2px;
+    border-style: solid;
+    background: #2e2e2e3f;
+    display: flex;
+    flex: 1 1 0px;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a:hover {
+    background: #2e2e2e8f;
+}
+
+@media only screen and (max-width: 720px) {
+    .menu a {
+        width: 80vw;
+    }
+}
+
+.menu a .site-icon {
+    max-width: 32px;
+    max-height: 32px;
+    margin: 0px 16px 0px 0px;
+    height: auto;
+}
